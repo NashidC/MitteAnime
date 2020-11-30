@@ -17,3 +17,4 @@ This is a website for anime lovers and people who want to get into anime but don
 - [ ] If your API requires the use of an API Key, an ENV file is required.
    <br>
 
+<br>

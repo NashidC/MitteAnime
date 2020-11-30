@@ -14,6 +14,7 @@
 
 4. News - See the latest anime news, learn about whats upcoming, new releases, series, and titles, etc.
    ![news](img/news.png)
+   
 
 ## Mandatory Requirements:
 
@@ -38,3 +39,14 @@
 2. **`yarn init`**
 3. **`yarn add parcel-bundler --dev`**
 4. **`yarn add axios`**
+
+---
+
+## WireFrames
+<img src='https://i.postimg.cc/25FsMyPL/Desktop-News.png'/>
+<img src='https://i.postimg.cc/gJzCWdWS/Desktop-Top.png'/>
+<img src='https://i.postimg.cc/X7r0qVyt/Desktop-Genre.png'/>
+<img src='https://i.postimg.cc/zfrmxKP1/iPad-Top.png'/>
+<img src='https://i.postimg.cc/qMWHC9sq/i-Phone-Genre-Menu.png'/>
+<img src='https://i.postimg.cc/cLYy7Xhm/i-Phone-Genre-Action.png'/>
+

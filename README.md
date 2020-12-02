@@ -2,7 +2,7 @@
 
 ## Description
 
-### This is a website for anime lovers and people who want to get into anime. This website will utilize the Jikan API to make 4 calls. The first API call will be used to allow users to see new and most watched series. The next API call is Genres this will allow users to filter content based on the genre that the user is looking for. The third API call is reviews. Review will allow users to read what other have thought about the show. The fourth API call is News. This API call will provide users with updated and current information, like new title release dates, upcoming seasons to name a few. Below are the four calls broken down with images showing how each one will work.
+This is a website for anime lovers and people who want to get into anime. This website will utilize the Jikan API `https://jikan.docs.apiary.io/#reference/0/anime` to make 4 calls. Below is an indepth look of the four API calls that we will use.
 
 1. Top - This will show the top, most popular animes at the moment. You can also optionally filter through the type of top shows, e.g. currently airing, upcoming, movies, and specials.
    ![New shows](img/animeimg.png)
@@ -14,7 +14,6 @@
 
 4. News - See the latest anime news, learn about whats upcoming, new releases, series, and titles, etc.
    ![news](img/news.png)
-   
 
 ## Mandatory Requirements:
 
@@ -43,10 +42,31 @@
 ---
 
 ## WireFrames
-<img src='https://i.postimg.cc/25FsMyPL/Desktop-News.png'/>
-<img src='https://i.postimg.cc/gJzCWdWS/Desktop-Top.png'/>
-<img src='https://i.postimg.cc/X7r0qVyt/Desktop-Genre.png'/>
-<img src='https://i.postimg.cc/zfrmxKP1/iPad-Top.png'/>
-<img src='https://i.postimg.cc/qMWHC9sq/i-Phone-Genre-Menu.png'/>
-<img src='https://i.postimg.cc/cLYy7Xhm/i-Phone-Genre-Action.png'/>
 
+Desktop - News page
+<img src='https://i.postimg.cc/25FsMyPL/Desktop-News.png'/>
+
+---
+
+Desktop - Top page
+<img src='https://i.postimg.cc/gJzCWdWS/Desktop-Top.png'/>
+
+---
+
+Desktop - Genre page
+<img src='https://i.postimg.cc/X7r0qVyt/Desktop-Genre.png'/>
+
+---
+
+Tablet - Top page <br>
+<img src='https://i.postimg.cc/zfrmxKP1/iPad-Top.png'/>
+
+---
+
+Smartphone - Genre page <br>
+<img src='https://i.postimg.cc/qMWHC9sq/i-Phone-Genre-Menu.png'/>
+
+---
+
+Smartphone - Genre page
+<img src='https://i.postimg.cc/cLYy7Xhm/i-Phone-Genre-Action.png'/>

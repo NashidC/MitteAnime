@@ -1,0 +1,13 @@
+{
+  "name": "MitteAnime",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NashidC/MitteAnime.git",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}

@@ -58,15 +58,18 @@ Desktop - Genre page
 
 ---
 
-Tablet - Top page <br>
+         Tablet - Top page
+
 <img src='https://i.postimg.cc/zfrmxKP1/iPad-Top.png'/>
 
 ---
 
-Smartphone - Genre page <br>
+         Smartphone - Genre page
+
 <img src='https://i.postimg.cc/qMWHC9sq/i-Phone-Genre-Menu.png'/>
 
 ---
 
-Smartphone - Genre page
+         Smartphone - Genre page
+
 <img src='https://i.postimg.cc/cLYy7Xhm/i-Phone-Genre-Action.png'/>

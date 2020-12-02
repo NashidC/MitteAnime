@@ -43,17 +43,20 @@ This is a website for anime lovers and people who want to get into anime. This w
 
 ## WireFrames
 
-Desktop - News page
+      Desktop - News page
+
 <img src='https://i.postimg.cc/25FsMyPL/Desktop-News.png'/>
 
 ---
 
-Desktop - Top page
+         Desktop - Top page
+
 <img src='https://i.postimg.cc/gJzCWdWS/Desktop-Top.png'/>
 
 ---
 
-Desktop - Genre page
+      Desktop - Genre page
+
 <img src='https://i.postimg.cc/X7r0qVyt/Desktop-Genre.png'/>
 
 ---

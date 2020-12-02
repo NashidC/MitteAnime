@@ -45,13 +45,28 @@ This is a website for anime lovers and people who want to get into anime. This w
 
 Desktop - News page
 <img src='https://i.postimg.cc/25FsMyPL/Desktop-News.png'/>
+
+---
+
 Desktop - Top page
 <img src='https://i.postimg.cc/gJzCWdWS/Desktop-Top.png'/>
+
+---
+
 Desktop - Genre page
 <img src='https://i.postimg.cc/X7r0qVyt/Desktop-Genre.png'/>
+
+---
+
 Tablet - Top page <br>
 <img src='https://i.postimg.cc/zfrmxKP1/iPad-Top.png'/>
+
+---
+
 Smartphone - Genre page <br>
 <img src='https://i.postimg.cc/qMWHC9sq/i-Phone-Genre-Menu.png'/>
-<br>Smartphone-Genre page <br>
+
+---
+
+Smartphone - Genre page
 <img src='https://i.postimg.cc/cLYy7Xhm/i-Phone-Genre-Action.png'/>

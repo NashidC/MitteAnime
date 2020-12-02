@@ -1,3 +1,7 @@
 .cache
 .dist
+<<<<<<< HEAD
+.ds_store 
+=======
 .ds_store
+>>>>>>> e633bc93b151c070a36bc0ac84691bc6f771d303

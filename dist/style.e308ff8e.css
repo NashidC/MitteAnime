@@ -94,7 +94,10 @@ a.active,a:hover{
   }
 }
 section{
-  background: url(background.jpg) no-repeat;
+  background: url(/background.9e15dd99.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

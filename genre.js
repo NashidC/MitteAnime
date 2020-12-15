@@ -1,15 +1,15 @@
 import axios from "axios"
 
 const BASE_URL = 'https://api.jikan.moe/v3';
+let genre_id = 1;
 let page = 1;
 
-
-function getTop() {
-  axios.get(`${BASE_URL}/top/anime/${page}`)
+function getGenres() {
+  axios.get(`${BASE_URL}/genre/anime/${genre_id}/${page}`)
     .then(function (response) {
       // handle success
       console.log(response);
-      let posterImg = response.data.top;
+      let posterImg = response.data.anime;
       console.log(posterImg.length)
       for (let i = 0; i < posterImg.length; i++) {
 
@@ -36,5 +36,5 @@ function getTop() {
 
 }
 
-window.addEventListener("load", function () { getTop() })
+window.addEventListener("load", function () { getGenres() })
 

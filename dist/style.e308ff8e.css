@@ -97,7 +97,7 @@ a:hover {
   }
 }
 #topContent {
-  background: url(background.jpg) no-repeat;
+  background: url(/background.9e15dd99.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
@@ -125,3 +125,6 @@ a:hover {
   padding: 10px 13px;
   border-radius: 5px;
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

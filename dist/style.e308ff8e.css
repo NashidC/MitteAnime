@@ -127,17 +127,22 @@ a:hover {
   align-items: baseline;
 }
 
-.imgSwap:hover .img1 {
-  display: none;
-  padding: 10px 13px;
-  border-radius: 5px;
+.imgSwap {
+  padding-top: inherit;
+  padding-left: inherit;
+  width: 100px;
+  height: 100px;
 }
-
-.imgSwap:hover .img2 {
-  display: inherit;
-  padding: 10px 13px;
-  border-radius: 5px;
+/* 
+.imgSwap2 .img {
+  transition: transform.3s ease-in-out;
 }
+.imgSwap2 .img:hover {
+  /* display: inherit; */
+/* padding: 5px 5px;
+  border-radius: 5px;
+  transform: translate3d(0px, -150px, 0px);
+} */
 
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

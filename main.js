@@ -65,3 +65,7 @@ import news from "./news";
     });
   });
 })();
+
+function setNewImg() {}
+console.log(setNewImg);
+function setOldImg() {}

@@ -41,23 +41,26 @@ import news from "./news";
       // Line above removes background image on News
       for (const newsObj of newsInfo.articles) {
         console.log(newsInfo.articles);
-        let newsParent = document.createElement("div"); // parent elements
-        let imgNews = document.createElement("div"); //parent elements, this div will be img
-        imgNews.innerHTML = newsObj.articles;
-        newsParent.innerHTML = newsObj.title;
-        newsParent.innerHTML = newsObj.intro;
-        newsParent.appendChild(imgNews);
 
-        let img2 = document.createElement("img");
-        img2.src = newsObj.image_url;
+        let textParent = document.createElement("div");
+        // let textParent2 = document.createElement("div");
+        textParent.setAttribute("id", "div1");
+        // textParent2.setAttribute("id", "par2");
 
-        newsParent.appendChild(img2);
+        textParent.innerHTML = newsObj.title;
+        textParent.innerHTML = newsObj.intro;
+        displayNews.appendChild(textParent);
+        displayNews.appendChild(textParent); //add line breaks between the text
 
-        displayNews.appendChild(newsParent);
+        let pix = document.createElement("img");
+        pix.setAttribute("id", "pic");
+        pix.src = newsObj.image_url;
+        displayNews.appendChild(pix);
 
-        // imgNews.innerHTML = newsInfo.image_url;
-        // newsParent.appendChild(imgNews); // setting my value
-        // displayNews.appendChild(newsParent); //Here I am pushing pasting the values to the new div inside of newsContent
+        // resize image:
+        // let resize = document.getElementById("div1");
+        // resize.height = 100;
+        // resize.width = 100;
       }
     });
   });

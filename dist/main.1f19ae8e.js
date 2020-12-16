@@ -2009,20 +2009,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
       for (const newsObj of newsInfo.articles) {
         console.log(newsInfo.articles);
-        let newsParent = document.createElement("div"); // parent elements
+        let textParent = document.createElement("div"); // let textParent2 = document.createElement("div");
 
-        let imgNews = document.createElement("div"); //parent elements, this div will be img
+        textParent.setAttribute("id", "div1"); // textParent2.setAttribute("id", "par2");
 
-        imgNews.innerHTML = newsObj.articles;
-        newsParent.innerHTML = newsObj.title;
-        newsParent.innerHTML = newsObj.intro;
-        newsParent.appendChild(imgNews);
-        let img2 = document.createElement("img");
-        img2.src = newsObj.image_url;
-        newsParent.appendChild(img2);
-        displayNews.appendChild(newsParent); // imgNews.innerHTML = newsInfo.image_url;
-        // newsParent.appendChild(imgNews); // setting my value
-        // displayNews.appendChild(newsParent); //Here I am pushing pasting the values to the new div inside of newsContent
+        textParent.innerHTML = newsObj.title;
+        textParent.innerHTML = newsObj.intro;
+        displayNews.appendChild(textParent);
+        displayNews.appendChild(textParent); //add line breaks between the text
+
+        let pix = document.createElement("img");
+        pix.setAttribute("id", "pic");
+        pix.src = newsObj.image_url;
+        displayNews.appendChild(pix); // resize image:
+        // let resize = document.getElementById("div1");
+        // resize.height = 100;
+        // resize.width = 100;
       }
     });
   });
@@ -2055,7 +2057,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58710" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50530" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

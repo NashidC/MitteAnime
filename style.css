@@ -108,10 +108,23 @@ a:hover {
   justify-content: space-between;
 }
 
-.img2 {
-  display: none;
-  padding: 10px 13px;
-  border-radius: 5px;
+#newsContent {
+  background-color: black;
+}
+
+#div1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  color: white;
+}
+
+#pic {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: baseline;
 }
 
 .imgSwap:hover .img1 {

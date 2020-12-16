@@ -122,4 +122,36 @@ p {
   color: white;
   background-color: black;
   background-size: length;
+  word-wrap: break-word;
+  text-align: center
+}
+
+#topContent {
+  background: url(background.jpg) repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#topContent {
+  display: flex;
+  flex-direction: row, row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img2 {
+  display: none;
+  padding: 10px 13px;
+  border-radius: 5px;
+}
+
+.imgSwap:hover .img1 {
+  display: none;
+  padding: 10px 13px;
+  border-radius: 5px;
+}
+
+.imgSwap:hover .img2 {
+  display: inherit;
+  padding: 10px 13px;
+  border-radius: 5px;
 }

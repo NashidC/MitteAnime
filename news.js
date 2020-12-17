@@ -9,7 +9,6 @@
 //   }
 // };
 
-
 // import news from "./news";
 // (() => {
 //   window.addEventListener("load", () => {
@@ -53,21 +52,19 @@
 // console.log(setNewImg);
 // function setOldImg() { }
 
-
-import axios from "axios"
+import axios from "axios";
 
 function getNews() {
-  axios.get(`https://api.jikan.moe/v3/anime/1/news`)
+  axios
+    .get(`https://api.jikan.moe/v3/anime/1/news`)
     .then(function (response) {
       // handle success
       console.log(response);
       let newsObj = response.data.articles;
-      console.log(newsObj.length)
+      console.log(newsObj.length);
       let displayNews = document.getElementById("newsContent"); //grab this element from html
       for (let i = 0; i < newsObj.length; i++) {
-
-
-        let title = document.createElement("p")
+        let title = document.createElement("p");
         title.innerHTML = newsObj[i].title;
         displayNews.appendChild(title);
 
@@ -81,13 +78,12 @@ function getNews() {
         textParent.setAttribute("id", "div1");
         // textParent2.setAttribute("id", "par2");
 
-
         textParent.innerHTML = newsObj[i].intro;
         displayNews.appendChild(textParent); //add line breaks between the text
 
-        let divider = document.createElement("div")
-        divider.setAttribute("id", "divider")
-        displayNews.appendChild(divider)
+        let divider = document.createElement("div");
+        divider.setAttribute("id", "divider");
+        displayNews.appendChild(divider);
       }
     })
     .catch(function (error) {
@@ -97,7 +93,8 @@ function getNews() {
     .then(function () {
       // always executed
     });
-
 }
 
-window.addEventListener("load", function () { getNews() })
+window.addEventListener("load", function () {
+  getNews();
+});

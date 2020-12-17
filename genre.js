@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from "axios";
 
 const BASE_URL = "https://api.jikan.moe/v3";
 let genre_id = 1;
@@ -194,13 +194,13 @@ const populateHTML = (response) => {
   for (let i = 0; i < posterImg.length; i++) {
     let parentElement = document.createElement("div");
 
-    let display = document.getElementById("poster")
+    let display = document.getElementById("poster");
     let posterObj = posterImg[i].image_url;
     let title = posterImg[i].title;
     let newImg = document.createElement("img");
     newImg.setAttribute("src", posterObj);
     parentElement.appendChild(newImg);
-    display.appendChild(parentElement)
+    display.appendChild(parentElement);
 
     let newTitle = document.createElement("p");
     newTitle.setAttribute("class", "title");

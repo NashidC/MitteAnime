@@ -1974,7 +1974,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //     });
 //   });
 // })();
-const BASE_URL = 'https://api.jikan.moe/v3';
+const BASE_URL = "https://api.jikan.moe/v3";
 let page = 1;
 
 function getTop() {
@@ -2036,7 +2036,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52085" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51197" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

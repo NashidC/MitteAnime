@@ -3,7 +3,6 @@
 // const BASE_URL = 'https://api.jikan.moe/v3';
 // let page = 1;
 
-
 // function getTop() {
 //   axios.get(`${BASE_URL}/top/anime/${page}`)
 //     .then(function (response) {
@@ -75,22 +74,21 @@
 //   });
 // })();
 
-import axios from "axios"
+import axios from "axios";
 
-const BASE_URL = 'https://api.jikan.moe/v3';
+const BASE_URL = "https://api.jikan.moe/v3";
 let page = 1;
 
-
 function getTop() {
-  axios.get(`${BASE_URL}/top/anime/${page}`)
+  axios
+    .get(`${BASE_URL}/top/anime/${page}`)
     .then(function (response) {
       // handle success
       console.log(response);
       let animeObj = response.data.top;
-      console.log(animeObj.length)
+      console.log(animeObj.length);
       let displayTop = document.getElementById("topContent"); //grab this element from html
       for (let i = 0; i < animeObj.length; i++) {
-
         let parentElement = document.createElement("div"); //parent element created a new div
 
         let img1 = document.createElement("img");
@@ -111,9 +109,8 @@ function getTop() {
     .then(function () {
       // always executed
     });
-
 }
 
-window.addEventListener("load", function () { getTop() })
-
-
+window.addEventListener("load", function () {
+  getTop();
+});

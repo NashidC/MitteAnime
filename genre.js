@@ -1,69 +1,8 @@
 import axios from "axios"
 
-const BASE_URL = 'https://api.jikan.moe/v3';
+const BASE_URL = "https://api.jikan.moe/v3";
 let genre_id = 1;
 let page = 1;
-
-
-function getGenres() {
-
-  axios.get(`${BASE_URL}/genre/anime/${genre_id}/${page}`)
-    .then(function (response) {
-      // handle success
-      console.log(response);
-      let posterImg = response.data.anime;
-      console.log(posterImg.length)
-      for (let i = 0; i < posterImg.length; i++) {
-
-        let posterObj = posterImg[i].image_url;
-        let title = posterImg[i].title;
-        let newImg = document.createElement('img');
-        newImg.setAttribute("src", posterObj);
-        document.querySelector('div').appendChild(newImg);
-        console.log(title)
-
-        let newTitle = document.createElement('p');
-        newTitle.setAttribute('class', 'title');
-        newTitle.textContent = title;
-        document.querySelector('div').appendChild(newTitle);
-      }
-
-      genres.forEach(function (genreType) {
-        var option = document.createElement('option');
-        option.value = genreType.id;
-        option.innerHTML = genreType.name;
-        selector.appendChild(option)
-      })
-      selector.onchange = function () {
-
-        genre_id = this.value;
-        getGenres();
-
-        console.log("success")
-        console.log(genre_id)
-        // window.location.reload()
-        selector.addEventListener('change', function () { getGenres() })
-
-      }
-
-
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    })
-    .then(function () {
-      // always executed
-
-    });
-}
-
-
-
-window.addEventListener("load", function () { getGenres() })
-
-
-
 let genres = [
   {
     id: 1,
@@ -236,6 +175,60 @@ let genres = [
   {
     id: 43,
     name: "Josei",
-  }
+  },
 ];
+const clearHTML = () => {
+  poster.innerHTML = "";
+};
+async function getGenres() {
+  return await axios
+    .get(`${BASE_URL}/genre/anime/${genre_id} `)
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    });
+}
+const populateHTML = (response) => {
+  let posterImg = response.data.anime;
+  //O(n)
+  for (let i = 0; i < posterImg.length; i++) {
+    let parentElement = document.createElement("div");
 
+    let display = document.getElementById("poster")
+    let posterObj = posterImg[i].image_url;
+    let title = posterImg[i].title;
+    let newImg = document.createElement("img");
+    newImg.setAttribute("src", posterObj);
+    parentElement.appendChild(newImg);
+    display.appendChild(parentElement)
+
+    let newTitle = document.createElement("p");
+    newTitle.setAttribute("class", "title");
+    newTitle.textContent = title;
+    parentElement.appendChild(newTitle);
+  }
+  //!come back to this
+  //This needs to happen on load but also on change
+};
+const getNewAnimeByGenre = async () => {
+  const response = await getGenres();
+  clearHTML();
+  console.log(response);
+  populateHTML(response);
+};
+window.addEventListener("load", function () {
+  getNewAnimeByGenre();
+  //O(n)
+  genres.forEach(function (genreType) {
+    var option = document.createElement("option");
+    option.value = genreType.id;
+    option.innerHTML = genreType.name;
+    selector.appendChild(option);
+  });
+  selector.onchange = function () {
+    genre_id = this.value;
+    getNewAnimeByGenre();
+    console.log("success");
+    console.log(genre_id);
+  };
+});

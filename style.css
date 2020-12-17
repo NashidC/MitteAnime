@@ -123,7 +123,8 @@ p {
   background-color: black;
   background-size: length;
   word-wrap: break-word;
-  text-align: center
+  text-align: center;
+  width: 200px;
 }
 
 #topContent {
@@ -144,7 +145,7 @@ p {
   border-radius: 5px;
 }
 
-.imgSwap:hover .img1 {
+/* .imgSwap:hover .img1 {
   display: none;
   padding: 10px 13px;
   border-radius: 5px;
@@ -154,4 +155,48 @@ p {
   display: inherit;
   padding: 10px 13px;
   border-radius: 5px;
+} */
+
+#poster{
+  display: flex;
+  flex-direction: row, row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+img {
+  width: 200px;
+  height: 300px;
+}
+
+/* #selector {
+  
+} */
+
+#div1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  color: white;
+}
+#pic {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.imgSwap {
+  padding-top: inherit;
+  padding-left: inherit;
+  width: 100px;
+  height: 100px;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: row, row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

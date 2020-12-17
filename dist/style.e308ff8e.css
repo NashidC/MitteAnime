@@ -96,7 +96,7 @@ a.active,a:hover{
   }
 }
 section{
-  background: url(background.jpg);
+  background: url(/background.9e15dd99.jpg);
   background-repeat: repeat;
   background-size: cover; 
   background-color: black;
@@ -128,7 +128,7 @@ p {
 }
 
 #topContent {
-  background: url(background.jpg) repeat;
+  background: url(/background.9e15dd99.jpg) repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -214,3 +214,5 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 } */
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

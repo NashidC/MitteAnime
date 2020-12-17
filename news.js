@@ -56,10 +56,6 @@
 
 import axios from "axios"
 
-const BASE_URL = 'https://api.jikan.moe/v3';
-let page = 1;
-
-
 function getNews() {
   axios.get(`https://api.jikan.moe/v3/anime/1/news`)
     .then(function (response) {
@@ -69,6 +65,7 @@ function getNews() {
       console.log(newsObj.length)
       let displayNews = document.getElementById("newsContent"); //grab this element from html
       for (let i = 0; i < newsObj.length; i++) {
+
 
         let title = document.createElement("p")
         title.innerHTML = newsObj[i].title;
@@ -88,7 +85,9 @@ function getNews() {
         textParent.innerHTML = newsObj[i].intro;
         displayNews.appendChild(textParent); //add line breaks between the text
 
-
+        let divider = document.createElement("div")
+        divider.setAttribute("id", "divider")
+        displayNews.appendChild(divider)
       }
     })
     .catch(function (error) {

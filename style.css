@@ -180,12 +180,19 @@ img {
   justify-content: flex-end;
   align-items: baseline;
   color: white;
+  background-color: black;
+  width: 200px;
+
+}
+#divider {
+  padding-top: 5%;
 }
 #pic {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
   align-items: baseline;
+  
 }
 .imgSwap {
   padding-top: inherit;
@@ -200,3 +207,10 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* #newsContent {
+  display: flex;
+  flex-direction: row, row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */

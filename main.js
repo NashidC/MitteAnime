@@ -25,7 +25,7 @@ import Topapi from "./api";
   });
 })();
 
-//_____________________________________________News Api______________________
+//_______________________News Api______________________
 
 import news from "./news";
 (() => {
@@ -49,23 +49,15 @@ import news from "./news";
 
         textParent.innerHTML = newsObj.title;
         textParent.innerHTML = newsObj.intro;
+
         displayNews.appendChild(textParent);
-        displayNews.appendChild(textParent); //add line breaks between the text
+        displayNews.appendChild(textParent);
 
         let pix = document.createElement("img");
         pix.setAttribute("id", "pic");
         pix.src = newsObj.image_url;
         displayNews.appendChild(pix);
-
-        // resize image:
-        // let resize = document.getElementById("div1");
-        // resize.height = 100;
-        // resize.width = 100;
       }
     });
   });
 })();
-
-function setNewImg() {}
-console.log(setNewImg);
-function setOldImg() {}

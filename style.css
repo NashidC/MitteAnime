@@ -110,20 +110,25 @@ a:hover {
 
 #newsContent {
   background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #div1 {
   display: flex;
   flex-flow: row;
-  justify-content: flex-end;
-  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: baseline; */
   color: white;
 }
 
 #pic {
   display: flex;
   flex-flow: row;
-  justify-content: flex-end;
+  justify-content: space-evenly, center;
   align-items: baseline;
 }
 
@@ -133,13 +138,3 @@ a:hover {
   width: 100px;
   height: 100px;
 }
-/* 
-.imgSwap2 .img {
-  transition: transform.3s ease-in-out;
-}
-.imgSwap2 .img:hover {
-  /* display: inherit; */
-/* padding: 5px 5px;
-  border-radius: 5px;
-  transform: translate3d(0px, -150px, 0px);
-} */

@@ -7,38 +7,30 @@
     <link rel="stylesheet" href="/style.e308ff8e.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script defer="" type="module" src="/main.1f19ae8e.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/style.e308ff8e.js"></script></head>
 
   <body>
     <nav>
-      <div class="logo" onclick="window.location.href='current.html'">
-        <img alt="MitteAnime" src="/Mitte_Anime-2.255004e0.svg">
-      </div>
-
-      <!-- <div class="imgSwap">
-        <img alt="MitteAnime" src="logoImg/Mitte_Anime-2.svg" />
-      </div> -->
-      <!-- <div class="imgSwap2">
-        <img alt="見ってアニメ" src="logoImg/-4.svg" />
-      </div> -->
-
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <!-- <label class="logo">MitteAnime!</label> -->
+      <label class="logo">MitteAnime!</label>
+      <!-- <img class="logo" src="logoImg/Mitte_Anime-2.svg" /> -->
+      <!-- <div class="imgSwap">
+      <img alt="MitteAnime" src="logoImg/Mitte_Anime-2.svg" />
+    </div> -->
       <ul>
-        <li><button id="current">Top</button></li>
+        <li><a class="active" href="/index.html">Top</a></li>
         <li><a href="/genre.html">Genre</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
-        <li>
-          <button id="news">News</button>
-        </li>
+        <li><a href="/news.html">News</a></li>
       </ul>
-      <!-- onclick="location.href='http://www.example.com'" type="button">
-      www.example.com -->
     </nav>
-    <div id="topContent"></div>
-    <div id="newsContent"></div>
+    <section>
+      <div id="topContent"></div>
+    </section>
   </body>
 </html>
